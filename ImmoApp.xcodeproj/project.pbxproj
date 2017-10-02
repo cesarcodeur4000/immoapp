@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC77B30543136B2E880D565B /* Pods_ImmoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB090C4F804FD8BEA3F23AC7 /* Pods_ImmoApp.framework */; };
 		ECF472C01F8223EE003A860C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF472BF1F8223EE003A860C /* AppDelegate.swift */; };
 		ECF472C21F8223EE003A860C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF472C11F8223EE003A860C /* ViewController.swift */; };
 		ECF472C51F8223EE003A860C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF472C31F8223EE003A860C /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EB97AFDCD39D71240E0329E /* Pods-ImmoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImmoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImmoApp/Pods-ImmoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A6C25B36B805ADC981C792E0 /* Pods-ImmoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImmoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImmoApp/Pods-ImmoApp.release.xcconfig"; sourceTree = "<group>"; };
+		EB090C4F804FD8BEA3F23AC7 /* Pods_ImmoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImmoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF472BC1F8223EE003A860C /* ImmoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImmoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF472BF1F8223EE003A860C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF472C11F8223EE003A860C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC77B30543136B2E880D565B /* Pods_ImmoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEC4CAED6AAD74F5A139909B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB090C4F804FD8BEA3F23AC7 /* Pods_ImmoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBD6836C368D0E34BEC2FF8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EB97AFDCD39D71240E0329E /* Pods-ImmoApp.debug.xcconfig */,
+				A6C25B36B805ADC981C792E0 /* Pods-ImmoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ECF472B31F8223EE003A860C = {
 			isa = PBXGroup;
 			children = (
 				ECF472BE1F8223EE003A860C /* ImmoApp */,
 				ECF472BD1F8223EE003A860C /* Products */,
+				CBD6836C368D0E34BEC2FF8C /* Pods */,
+				BEC4CAED6AAD74F5A139909B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECF472CE1F8223EE003A860C /* Build configuration list for PBXNativeTarget "ImmoApp" */;
 			buildPhases = (
+				C0D3D0D2FA56012435028AA4 /* [CP] Check Pods Manifest.lock */,
 				ECF472B81F8223EE003A860C /* Sources */,
 				ECF472B91F8223EE003A860C /* Frameworks */,
 				ECF472BA1F8223EE003A860C /* Resources */,
+				AB7DFF5C11EDFE38C2A885C9 /* [CP] Embed Pods Frameworks */,
+				EB92165874285392195DA248 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB7DFF5C11EDFE38C2A885C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImmoApp/Pods-ImmoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D3D0D2FA56012435028AA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImmoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB92165874285392195DA248 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImmoApp/Pods-ImmoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECF472B81F8223EE003A860C /* Sources */ = {
@@ -260,6 +338,7 @@
 		};
 		ECF472CF1F8223EE003A860C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB97AFDCD39D71240E0329E /* Pods-ImmoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImmoApp/Info.plist;
@@ -272,6 +351,7 @@
 		};
 		ECF472D01F8223EE003A860C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C25B36B805ADC981C792E0 /* Pods-ImmoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImmoApp/Info.plist;
