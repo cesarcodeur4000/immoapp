@@ -13,6 +13,9 @@
 		ECF472C51F8223EE003A860C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF472C31F8223EE003A860C /* Main.storyboard */; };
 		ECF472C71F8223EE003A860C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF472C61F8223EE003A860C /* Assets.xcassets */; };
 		ECF472CA1F8223EE003A860C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF472C81F8223EE003A860C /* LaunchScreen.storyboard */; };
+		ECF472D31F82668F003A860C /* UIImage_encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF472D21F82668F003A860C /* UIImage_encoding.swift */; };
+		ECF472D71F826921003A860C /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF472D61F826921003A860C /* Client.swift */; };
+		ECF472DA1F826B1F003A860C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF472D91F826B1F003A860C /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		ECF472C91F8223EE003A860C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECF472CB1F8223EE003A860C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF472D11F826570003A860C /* ImmoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImmoApp.entitlements; sourceTree = "<group>"; };
+		ECF472D21F82668F003A860C /* UIImage_encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImage_encoding.swift; path = extensions/UIImage_encoding.swift; sourceTree = SOURCE_ROOT; };
+		ECF472D61F826921003A860C /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		ECF472D91F826B1F003A860C /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 		ECF472BE1F8223EE003A860C /* ImmoApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECF472D81F826AE9003A860C /* views */,
+				ECF472D51F8268EF003A860C /* model */,
+				ECF472D41F8266A3003A860C /* extensions */,
 				ECF472D11F826570003A860C /* ImmoApp.entitlements */,
 				ECF472BF1F8223EE003A860C /* AppDelegate.swift */,
 				ECF472C11F8223EE003A860C /* ViewController.swift */,
@@ -88,6 +97,30 @@
 				ECF472CB1F8223EE003A860C /* Info.plist */,
 			);
 			path = ImmoApp;
+			sourceTree = "<group>";
+		};
+		ECF472D41F8266A3003A860C /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECF472D21F82668F003A860C /* UIImage_encoding.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		ECF472D51F8268EF003A860C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ECF472D61F826921003A860C /* Client.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		ECF472D81F826AE9003A860C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				ECF472D91F826B1F003A860C /* ScanViewController.swift */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF472C21F8223EE003A860C /* ViewController.swift in Sources */,
+				ECF472D31F82668F003A860C /* UIImage_encoding.swift in Sources */,
+				ECF472DA1F826B1F003A860C /* ScanViewController.swift in Sources */,
+				ECF472D71F826921003A860C /* Client.swift in Sources */,
 				ECF472C01F8223EE003A860C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
