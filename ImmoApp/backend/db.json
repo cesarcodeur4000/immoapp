@@ -1,0 +1,11 @@
+{
+    "name": "Scanner",
+    "version": "0.0.1",
+    "description": "Use Realm Object Server's event-handling capabilities to react    to uploaded images and send them to Watson for image recognition.",
+        "main": "index.js",
+        "author": "Realm",
+        "dependencies": {
+            "realm": "^1.8.0",
+            "watson-developer-cloud": "^2.11.0"
+        }
+}
