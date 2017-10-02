@@ -7,4 +7,6 @@ target 'ImmoApp' do
 
   # Pods for ImmoApp
 
+  pod 'RealmSwift'  
+
 end
