@@ -26,6 +26,7 @@
 		ECF472C61F8223EE003A860C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECF472C91F8223EE003A860C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECF472CB1F8223EE003A860C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF472D11F826570003A860C /* ImmoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImmoApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		ECF472BE1F8223EE003A860C /* ImmoApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECF472D11F826570003A860C /* ImmoApp.entitlements */,
 				ECF472BF1F8223EE003A860C /* AppDelegate.swift */,
 				ECF472C11F8223EE003A860C /* ViewController.swift */,
 				ECF472C31F8223EE003A860C /* Main.storyboard */,
@@ -123,7 +125,13 @@
 				TargetAttributes = {
 					ECF472BB1F8223EE003A860C = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 4LY8G2SPQ3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -346,6 +354,8 @@
 			baseConfigurationReference = 3EB97AFDCD39D71240E0329E /* Pods-ImmoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImmoApp/ImmoApp.entitlements;
+				DEVELOPMENT_TEAM = 4LY8G2SPQ3;
 				INFOPLIST_FILE = ImmoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bt.ImmoApp;
@@ -359,6 +369,8 @@
 			baseConfigurationReference = A6C25B36B805ADC981C792E0 /* Pods-ImmoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImmoApp/ImmoApp.entitlements;
+				DEVELOPMENT_TEAM = 4LY8G2SPQ3;
 				INFOPLIST_FILE = ImmoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bt.ImmoApp;
@@ -386,6 +398,7 @@
 				ECF472D01F8223EE003A860C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
